@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-1"></div>
+            <div class="col-10 d-flex justify-content-left">
+                <h1 class="display-4">Decks</h1>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-1"></div>
+            <div class="col-10 d-flex flex-column">
+                {% for deck in decks %}
+                    <a href="{% url 'deck' deck=deck.id %}" class="lead text-muted">{{ deck.title }}</a>
+                {% endfor %}
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+{% endblock %}
