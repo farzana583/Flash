@@ -85,6 +85,8 @@ DATABASES = {
         'NAME': 'flash',
         'USER': 'moringa',
         'PASSWORD': 'Farzana2241',
+        'HOST': 'localhost',
+        'PORT' : '',
     }
 }
 
