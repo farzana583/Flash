@@ -18,6 +18,8 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ card.title }}</h5>
                     <p class="card-text">{{ card.notes }}</p>
+                    <hr>
+                    <p class="card-footer">{{ card.pub_date }}</p>
                     <a href="{% url 'delete' card=card.id%}">delete</a> 
                 </div>
             </div>

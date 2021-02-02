@@ -30,3 +30,4 @@ class Card(models.Model):
     title = models.TextField(max_length=150)
     notes = models.TextField(max_length=300)
     deck = models.ForeignKey(Deck, on_delete=models.CASCADE)
+    pub_date=models.DateTimeField(auto_now_add=True,null=True, blank=True)
